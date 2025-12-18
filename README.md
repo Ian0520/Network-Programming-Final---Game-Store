@@ -7,8 +7,6 @@ Docs:
 - `PROTOCOL.md`: wire messages
 - `MANIFEST.md`: uploaded game package format
 
-All commands below assume your current directory is `hw3/`.
-
 ## Server
 
 Edit `config.json` as needed (see `config.example.json` for reference).
