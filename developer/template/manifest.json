@@ -1,0 +1,21 @@
+{
+  "gameId": "__GAME_ID__",
+  "name": "__GAME_ID__ (template)",
+  "version": "0.1.0",
+  "developer": "CHANGE_ME",
+  "description": "Template game for HW3 plumbing tests.",
+  "clientType": "cli",
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "entrypoints": {
+    "server": {
+      "module": "server_main.py",
+      "argv": ["--port", "{port}", "--token", "{token}", "--room-id", "{roomId}"]
+    },
+    "client": {
+      "module": "client_main.py",
+      "argv": ["--host", "{host}", "--port", "{port}", "--token", "{token}", "--room-id", "{roomId}", "--user", "{userId}"]
+    }
+  }
+}
+

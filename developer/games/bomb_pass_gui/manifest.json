@@ -1,0 +1,20 @@
+{
+  "gameId": "bomb_pass_gui",
+  "name": "Bomb Pass (GUI)",
+  "version": "1.0.0",
+  "developer": "CHANGE_ME",
+  "description": "Pass the bomb before the timer expires. Last player remaining wins. Pygame GUI client.",
+  "clientType": "gui",
+  "minPlayers": 2,
+  "maxPlayers": 3,
+  "entrypoints": {
+    "server": {
+      "module": "server_main.py",
+      "argv": ["--port", "{port}", "--token", "{token}", "--room-id", "{roomId}"]
+    },
+    "client": {
+      "module": "client_main.py",
+      "argv": ["--host", "{host}", "--port", "{port}", "--token", "{token}", "--room-id", "{roomId}", "--user", "{userId}"]
+    }
+  }
+}

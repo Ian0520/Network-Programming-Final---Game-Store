@@ -1,0 +1,11 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "bindHost": "0.0.0.0",
+    "port": 10101,
+    "sqlitePath": "server/storage/hw3.sqlite3"
+  },
+  "developerServer": {"host": "127.0.0.1", "bindHost": "0.0.0.0", "port": 10102},
+  "lobbyServer": {"host": "127.0.0.1", "bindHost": "0.0.0.0", "port": 10103, "gamePortMin": 10000, "gamePortMax": 20000},
+  "gameHostPublic": "127.0.0.1"
+}

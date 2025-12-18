@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Optional local config overrides (use `NP_HW3_CONFIG` to point to these)
+config.local.json
+config.*.local.json
+
+# Runtime artifacts (PID/logs/game-room logs)
+.run/
+*.pid
+*.log
+
+# Server runtime data (generated)
+server/storage/
+server/uploaded_games/
+
+# Player runtime downloads (generated)
+player/downloads/
+
+# Generated archives
+*.zip
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
