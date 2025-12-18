@@ -33,19 +33,6 @@ Edit `config.json`:
 - `lobbyServer.bindHost` / `lobbyServer.port`
 - `gameHostPublic` (IMPORTANT: the host/IP that clients use to connect to spawned game servers)
 
-Client connection defaults come from:
-
-- `developerServer.host` / `developerServer.port`
-- `lobbyServer.host` / `lobbyServer.port`
-
-Optional overrides (env vars still work):
-
-- `NP_HW3_DB_HOST`, `NP_HW3_DB_PORT`, `NP_HW3_DB_PATH`
-- `NP_HW3_DEV_HOST`, `NP_HW3_DEV_PORT`
-- `NP_HW3_LOBBY_HOST`, `NP_HW3_LOBBY_PORT`
-- `NP_HW3_GAME_HOST_PUB`
-- `NP_HW3_CONFIG` (use a different config file path)
-
 ## Player
 
 Run the Lobby Client (use 1 terminal per player):
@@ -58,30 +45,15 @@ If you want to play GUI games (e.g. `bomb_pass_gui`), install `pygame` on the pl
 
 `python3 -m pip install pygame`
 
-### Connection settings (IP / Port)
-
-Defaults come from `config.json` (`lobbyServer.host` / `lobbyServer.port`). You can override with:
-
-- Env vars: `NP_HW3_LOBBY_HOST`, `NP_HW3_LOBBY_PORT`
-- Args: `PYTHONPATH=.. python3 -m hw3.player.lobby_client <LOBBY_HOST> <LOBBY_PORT>`
-
 Downloads:
 
 - Default: `hw3/player/downloads/<username>/...`
-- Override root: `NP_HW3_DOWNLOADS_ROOT`
 
 ## Developer
 
 Run the Developer Client:
 
 `PYTHONPATH=.. python3 -m hw3.developer.developer_client`
-
-### Connection settings (IP / Port)
-
-Defaults come from `config.json` (`developerServer.host` / `developerServer.port`). You can override with:
-
-- Env vars: `NP_HW3_DEV_HOST`, `NP_HW3_DEV_PORT`
-- Args: `PYTHONPATH=.. python3 -m hw3.developer.developer_client <DEV_HOST> <DEV_PORT>`
 
 ### Upload / Update flow
 
